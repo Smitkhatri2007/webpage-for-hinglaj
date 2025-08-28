@@ -1,0 +1,32 @@
+{
+  "name": "hinglaj-sweets-server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "db:migrate": "node src/scripts/sync.js",
+    "make:admin": "node src/scripts/makeAdmin.js",
+    "seed:admin": "node src/scripts/seedAdmin.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0"
+  }
+}
+
